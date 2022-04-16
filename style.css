@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  width: 60vw;
+  margin: 15vh auto;
+  background-color: gray;
+}
+/* logo */
+.card .logo {
+  width: 10vw;
+  margin: auto;
+  text-align: center;
+}
+
+/* subscription box */
+.card .subscription {
+  text-align: center;
+  margin: 10vh 0;
+  font-size: 20px;
+}
+.card .subscription .launch {
+  color: hsl(0, 0%, 59%);
+  font-size: 3rem;
+}
+.card .subscription .launch .bold {
+  font-weight: 700;
+  color: hsl(209, 33%, 12%);
+}
+.card .subscription .sub-text {
+  margin: 1rem;
+}
+.card .subscription .notify-email {
+  margin: 0;
+  font-size: 20px;
+}
+
+.card .subscription .notify-email input {
+  width: 60%;
+  padding: 15px;
+  border: 0.1px solid hsl(0, 0%, 59%);
+  border-radius: 20px;
+}
+.card .subscription .notify-email .notify {
+  width: 20%;
+  padding: 15px;
+  border: 0.1px solid hsl(0, 0%, 59%);
+  border-radius: 20px;
+  color: hsl(223, 100%, 88%);
+  background-color: hsl(223, 87%, 63%);
+}
+.card .subscription .notify-email .notify:hover {
+  opacity: 60%;
+  transition: all 1s;
+  cursor: pointer;
+}
+/* dashboard */
+.sample img {
+  width: 100%;
+}
+
+/* social icons and copyright */
+footer {
+  text-align: center;
+  width: 30vw;
+  margin: 0 auto;
+}
