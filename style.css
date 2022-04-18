@@ -1,12 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
 }
 
 .card {
+  font-family: 'Libre Franklin', sans-serif;
   width: 60vw;
   margin: 15vh auto;
-  background-color: gray;
+  /* background-color: gray; */
 }
 /* logo */
 .card .logo {
@@ -19,6 +22,7 @@
 .card .subscription {
   text-align: center;
   margin: 10vh 0;
+  margin-bottom: 0;
   font-size: 20px;
 }
 .card .subscription .launch {
@@ -56,14 +60,82 @@
   transition: all 1s;
   cursor: pointer;
 }
+.card .error{
+  display: none;
+  color: red;
+  font-style: italic;
+  width: 80%;
+  margin: 0 10%;
+  
+}
 /* dashboard */
+.sample{
+  margin: 10vh 0;
+}
 .sample img {
   width: 100%;
 }
 
 /* social icons and copyright */
+.card .socials{
+  margin: 5vh auto;
+  text-align: center;
+}
+.card .socials .icons i{
+  padding: 12px 12px;
+  margin: 0 10px;
+  border: 0.2px solid hsla(210, 32%, 12%, 0.555);
+  border-radius: 100%;
+  background-color: antiquewhite;
+  color: hsl(223, 87%, 63%);
+}
+.card .socials .icons i:hover{
+  transition: all 1s;
+  cursor: pointer;
+  color: hsl(223, 100%, 88%);
+  background-color: hsl(223, 87%, 63%);
+}
+
+.card .copyright{
+  text-align: center;
+}
 footer {
   text-align: center;
   width: 30vw;
   margin: 0 auto;
 }
+
+
+
+/* mobile design start*/
+@media(max-width: 750px){
+  .card .logo{
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .card .subscription{
+    margin-top: 7vh;
+    margin-bottom: 8vh;
+  }
+  .card .subscription .launch{
+    font-size: 2rem;
+  }
+  .card .subscription .notify-email input {
+    padding: 20px;
+    width: 90%;
+    border-radius: 25px;
+  }
+.card .subscription .notify-email .notify {
+  width: 100%;
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 25px;
+
+}
+footer{
+  width: 100%;
+}
+}
+/* TODO: add error message status to display while in this width */
+/* TODO: add box shadow the buttons */
+/* mobile design end */
